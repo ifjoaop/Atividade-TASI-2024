@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background:  #cad647;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ff0707;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(241, 14, 14, 0.8);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  color: #f61d1d;
+  text-shadow: 0 0 10px rgba(241, 14, 14, 0.8);
+}
+
+a {
+  color: #ff2a00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff0000;
+  text-shadow: 0 0 10px rgba(241, 14, 14, 0.8);
+}
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(45deg, #bd1b05, #ef2512);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(237, 15, 15, 0.853);
+}
